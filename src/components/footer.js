@@ -3,21 +3,21 @@ import "../styles/footer.css";
 
 export default class Footer extends Component {
   render() {
-    console.log(this.props);
+    const { articles, selectedArticle, issueTitle, className } = this.props;
 
-    const articleLinks = this.props.articles.map(articleTitle => {
+    const articleLinks = articles.map(articleTitle => {
       const className =
-        this.props.selectedArticle === articleTitle ? "selected" : "unselected";
+        selectedArticle === articleTitle ? "selected" : "unselected";
       return (
-        <li className="articleLink">
+        <li key={articleTitle} className="articleLink">
           <a className={className}>{articleTitle}</a>
         </li>
       );
     });
 
     return (
-      <footer className="footer">
-        <h1 className="issueTitle">{this.props.issueTitle}</h1>
+      <footer className={className}>
+        <h1 className="issueTitle">{issueTitle}</h1>
         <ul className="articleLinks">{articleLinks}</ul>
       </footer>
     );

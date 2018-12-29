@@ -1,22 +1,22 @@
-.footer {
-  border: 2px solid;
-  border-color: black;
-  position: fixed;
-  bottom: 0px;
-}
-
 .issueTitle {
   font-weight: 700;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 .articleLinks {
+  display: flex;
   list-style: none;
+  padding-inline-start: 0px;
+  margin-left: 80px;
 }
 
 .articleLink {
-  display: inline;
+  flex-grow: 0;
   margin-right: 84px;
+}
+
+a {
+  white-space: nowrap;
 }
 
 .selected {
