@@ -1,0 +1,28 @@
+.footer {
+  border: 2px solid;
+  border-color: black;
+  position: fixed;
+  bottom: 0px;
+}
+
+.issueTitle {
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.articleLinks {
+  list-style: none;
+}
+
+.articleLink {
+  display: inline;
+  margin-right: 84px;
+}
+
+.selected {
+  font-weight: 400;
+}
+
+.unselected {
+  font-weight: 100;
+}

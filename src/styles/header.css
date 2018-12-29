@@ -1,0 +1,20 @@
+.header {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid;
+  border-color: black;
+}
+
+.title {
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.search {
+  font-weight: 500;
+  font-size: 16px;
+}
