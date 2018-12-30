@@ -8,7 +8,15 @@ export default class Article extends Component {
     return (
       <HorizontalScroll>
         <section className={className}>
-          <div className="component" />
+          <div className="component">
+            <div className="quote-1">
+              <i>
+                "Our kitchen is small. <br /> Our <b>love for food is big.</b>
+                <br /> Please be patient if your food is a little late. <br />
+                We promise Jitlada's food is worth the wait."
+              </i>
+            </div>
+          </div>
           <div className="component" />
           <div className="component" />
           <div className="component" />
