@@ -22,6 +22,13 @@ class App extends Component {
       issueTitle: "01. Salve"
     };
   }
+
+  articleClickHandler = e => {
+    const selectedArticle = e.target.value;
+    if (selectedArticle === this.state.selectedArticle) return;
+    else this.setState({ selectedArticle });
+  };
+
   render() {
     const { selectedArticle, articles, issueTitle } = this.state;
 
@@ -34,6 +41,7 @@ class App extends Component {
           selectedArticle={selectedArticle}
           articles={articles}
           issueTitle={issueTitle}
+          articleClickHandler={this.articleClickHandler}
         />
       </div>
     );

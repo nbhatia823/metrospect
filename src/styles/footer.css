@@ -10,13 +10,20 @@
   margin-left: 80px;
 }
 
-.articleLink {
+li {
   flex-grow: 0;
   margin-right: 84px;
 }
 
-a {
+button {
   white-space: nowrap;
+  background: none;
+  font-size: 16px;
+  border: 0px;
+}
+
+button:focus {
+  outline: none;
 }
 
 .selected {
