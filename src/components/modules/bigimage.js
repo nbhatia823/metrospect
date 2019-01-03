@@ -1,8 +1,9 @@
 import React, { Component } from "react"
+import Module from "./module.js"
 import "../../styles/article.css"
 import "../../styles/modules/bigimage.css"
 
-export default class BigImage extends Component {
+export default class BigImage extends Module {
   render() {
     return (
       <div className="component flex-direction-column">

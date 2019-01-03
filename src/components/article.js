@@ -16,9 +16,10 @@ export default class Article extends Component {
             <i>
               "Our kitchen is small. <br /> Our <b>love for food is big.</b>
               <br /> Please be patient if your food is a little late. <br />
-              We promise Jitlada's food is worth the wait."
+              We promise Jitladci's food is worth the wait."
             </i>
           }
+          firstModule="true"
         />
         <BigImage src={jitlada2} caption="Optional Caption" />
         <section className={className}>
