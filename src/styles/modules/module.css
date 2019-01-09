@@ -1,4 +1,11 @@
 .first-module-padding {
-  padding-left: 15%;
-  padding-right: 0;
+  padding-left: 15vw;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
 }

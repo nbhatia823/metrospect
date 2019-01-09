@@ -1,14 +1,21 @@
 .big-image-container {
   overflow: hidden;
   height: 90%;
+  max-width: auto;
 }
 
 .big-image {
   object-fit: contain;
-  max-height: 100%;
+  margin-top: 5%;
+  height: 100%;
+  width: auto;
 }
 
 .big-image-caption {
-  color: lightgray;
-  padding-top: 1%;
+  color: gray;
+  padding-top: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 110%;
 }

@@ -1,0 +1,19 @@
+.setup-hook {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20%;
+  /* padding-right: 20%; */
+}
+
+.setup {
+  margin-bottom: 10%;
+  font-size: 1.2em;
+}
+
+.hook {
+  font-size: 1.8em;
+  margin-bottom: auto;
+}

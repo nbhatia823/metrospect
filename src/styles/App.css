@@ -14,8 +14,8 @@ body,
 }
 
 .header {
-  border: 2px solid;
-  border-color: black;
+  /* border: 2px solid;
+  border-color: black; */
 
   /* flex for children */
   display: flex;
@@ -24,7 +24,7 @@ body,
   align-items: center;
 
   /* flex position within parent */
-  flex: 0 0 80px;
+  flex: 0 0 50px;
   width: 100%;
 }
 
@@ -40,10 +40,10 @@ body,
 }
 
 .footer {
-  border: 2px solid;
-  border-color: black;
+  /* border: 2px solid;
+  border-color: black; */
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   /* flex position within parent */
   flex: 0 0 100px;
