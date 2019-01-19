@@ -14,6 +14,6 @@ export default class Article extends Component {
   }
   render() {
     const { className, selectedArticle } = this.props
-    return <div>{this.SelectedArticle()}</div>
+    return <IndiaGrillArticle />
   }
 }
