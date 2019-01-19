@@ -1,41 +1,44 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
-import Header from "./header.js";
-import Article from "./article.js";
-import Footer from "./footer.js";
+import Header from "./header.js"
+import Article from "./article.js"
+import Footer from "./footer.js"
 
-import "../styles/App.css";
+import "../styles/App.css"
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      selectedArticle: "Jitlada 5ever",
+      selectedArticle: "India's Best Grill",
       articles: [
         "Jitlada 5ever",
-        "India's best grill",
+        "India's Best Grill",
         "Friday heaven",
         "Out of plates",
         "Tu tacos pls",
         "Coffee connection"
       ],
       issueTitle: "01. Salve"
-    };
+    }
   }
 
-  articleClickHandler = e => {
-    const selectedArticle = e.target.value;
-    if (selectedArticle === this.state.selectedArticle) return;
-    else this.setState({ selectedArticle });
-  };
+  articleClickHandler = (e) => {
+    const selectedArticle = e.target.value
+    if (selectedArticle === this.state.selectedArticle) return
+    else {
+      this.setState({ selectedArticle })
+      console.log(selectedArticle)
+    }
+  }
 
   render() {
-    const { selectedArticle, articles, issueTitle } = this.state;
+    const { selectedArticle, articles, issueTitle } = this.state
 
     return (
       <div className="viewport">
         <Header className="header" />
-        <Article className="article" />
+        <Article className="article" selectedArticle={selectedArticle} />
         <Footer
           className="footer"
           selectedArticle={selectedArticle}
@@ -44,8 +47,8 @@ class App extends Component {
           articleClickHandler={this.articleClickHandler}
         />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
