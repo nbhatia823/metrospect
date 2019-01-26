@@ -6,14 +6,11 @@ import Module from "./module.js"
 export default class SetupHook extends Module {
   render() {
     return (
-      <div className="component">
+      <div className="module">
         <div
-          className={[
-            "setup-hook",
-            "flex-direction-column",
-            this.isfirstModule(this.props),
-            this.textAlign(this.props)
-          ].join(" ")}
+          className={["flex-direction-column", this.addModuleStyles()].join(
+            " "
+          )}
         >
           <div className="setup">{this.props.setup}</div>
           <div className="hook">{this.props.hook}</div>

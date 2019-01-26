@@ -8,10 +8,10 @@ export default class BigImage extends Module {
     return (
       <div
         className={[
-          "component",
+          "module ",
           "flex-direction-column",
-          this.isfirstModule(this.props)
-        ].join(" ")}
+          this.addModuleStyles()
+        ].join("")}
       >
         <div className={[" big-image-container"].join(" ")}>
           <img className="big-image" src={this.props.src} alt="Big Jitlada" />

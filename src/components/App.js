@@ -28,7 +28,7 @@ class App extends Component {
     if (selectedArticle === this.state.selectedArticle) return
     else {
       this.setState({ selectedArticle })
-      console.log(selectedArticle)
+      // console.log(selectedArticle)
     }
   }
 

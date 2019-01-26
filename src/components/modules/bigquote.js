@@ -6,10 +6,8 @@ import Module from "./module.js"
 export default class BigQuote extends Module {
   render() {
     return (
-      <div className="component">
-        <div
-          className={["big-quote", this.isfirstModule(this.props)].join(" ")}
-        >
+      <div className={["module", this.addModuleStyles()].join("")}>
+        <div className={"big-quote"}>
           <i>{this.props.text}</i>
         </div>
       </div>

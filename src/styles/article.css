@@ -7,7 +7,7 @@ html {
 }
 
 /* Filler, can remove later. */
-.component {
+.module {
   /* border: 1px solid black; */
   height: 100%;
   min-width: 350px;

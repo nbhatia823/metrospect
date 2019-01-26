@@ -12,33 +12,28 @@ import SetupHook from "../modules/setuphook.js"
 import ShortParagraph from "../modules/shortparagraph.js"
 
 export default class IndiaGrillArticle extends Component {
+  componentWillMount() {
+    console.log("reached")
+  }
+  componentDidMount() {
+    console.log("reached")
+  }
+
   render() {
     const { className } = this.props
     return (
       <HorizontalScroll>
-        <BigImage
-          src={IndiaGrill3}
-          caption="Optional Caption"
+        <BigQuote
+          text="Sizzle sizzle, tikka on the grizzle."
+          fontWeight="lighter"
           firstModule="true"
         />
-        <BigQuote
-          text={
-            <p style={{ fontWeight: "lighter" }}>
-              Sizzle sizzle,
-              <br /> tikka on the grizzle.
-            </p>
-          }
-        />
+        <BigImage src={IndiaGrill3} caption="Optional Caption" />
         <SetupHook
           textAlign="right"
-          setup={
-            // Inline textAlign attribute
-            <p>
-              Wedged between a pharmacy and a shoe cleaner, India’s Grill is
-              slightly inconspicuous.
-            </p>
-          }
-          hook={<p>Make no mistake, this place is worth the visit.</p>}
+          setup="Wedged between a pharmacy and a shoe cleaner, India’s Grill is
+              slightly inconspicuous."
+          hook="Make no mistake, this place is worth the visit."
         />
         <BigImage
           src={IndiaGrill6}
